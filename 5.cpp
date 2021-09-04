@@ -7,8 +7,11 @@ int add(int x, int y){
 }
 int main(){
 	
-	cin >> "enter value of a";
-	cin >> "enter value os b";
+	int a,b;
+	cout<<"enter value of a";
+	cin>>a;
+	cout<<"enter value os b";
+	cin>>b;
 	cout << "the value is"<< add(a,b);
 	return 0;
 }
