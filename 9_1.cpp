@@ -1,4 +1,6 @@
 //call by value
+/*here the values are copied and the operations take place on the data copy,
+not on the original data*/
 #include <iostream>
 using namespace std;
 
