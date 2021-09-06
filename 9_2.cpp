@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int display(int &a){
+int display(int &a){//using & to refer the original value's memory
 	a = a+1;
 	return a;
 }
