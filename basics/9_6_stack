@@ -1,0 +1,40 @@
+// https://www.learncpp.com/cpp-tutorial/the-stack-and-the-heap/
+/*The code segment (also called a text segment), where the compiled program sits in memory. The code segment is typically read-only.
+The bss(block starting symbol) segment (also called the uninitialized data segment), where zero-initialized global and static variables are stored.
+The data segment (also called the initialized data segment), where initialized global and static variables are stored.
+The heap, where dynamically allocated variables are allocated from.
+The call stack, where function parameters, local variables, and other function-related information are stored.
+difference between heap and stack is
+heap is slow, stack is faster.stack is for compile time allocation,heap is for dynamic allocation
+*/
+
+int foo(int x)
+{
+    // b section in call stack
+    return x;
+} // foo is popped off the call stack here
+
+/*The call stack segment holds the memory used for the call stack.
+When the application starts, the main() function is pushed on the call stack by the operating system. 
+Then the program begins executing.*/
+
+int main() //starts here
+{
+    // a section in call stack
+    foo(5); // foo is pushed on the call stack here
+    // c section in call stack
+
+    return 0;
+}
+
+/* call stack contains
+The address of the instruction beyond the function call (called the return address). This is how the CPU remembers where to return to after the called function exits.
+All function arguments.
+Memory for any local variables.
+Saved copies of any registers modified by the function that need to be restored when the function returns.
+
+A stack frame keeps track of all of the data associated with one function call,the stack pointer keeps track of where the top of the call stack currently is.
+Stack overflow happens when all the memory in the stack has been allocated -- in that case, further allocations begin overflowing into other sections of memory.
+in windows stack sze can be 1 mb and on unix it can be 8 mb.
+
+
