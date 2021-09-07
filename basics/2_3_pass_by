@@ -23,6 +23,6 @@ At this point, the function parameter and the argument both point to the same va
 If the function parameter is then dereferenced to change the value being pointed to, that will impact the value the argument is pointing to,
  since both the function parameter and argument are pointing to the same value!
 If the function parameter is assigned a different address, that will not impact the argument, 
-since the function parameter is a copy, and changing the copy won’t impact the original. 
+since the function parameter is a copy, and changing the copy wonâ€™t impact the original. 
 */
 
