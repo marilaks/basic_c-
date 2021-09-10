@@ -1,12 +1,12 @@
 /*
-	An object in C++ as, ìa piece of memory that can be used to store valuesî. An object with a name is called a variable.
+	An object in C++ as, ‚Äúa piece of memory that can be used to store values‚Äù. An object with a name is called a variable.
 
 EX:
 you.driveTo(work);
 
 makes it clearer who the subject is (you) and what behavior is being invoked (driving somewhere).
- Rather than being focused on writing functions, weíre focused on defining objects that have a well-defined set of behaviors.
-  This is why the paradigm is called ìobject-orientedî.
+ Rather than being focused on writing functions, we‚Äôre focused on defining objects that have a well-defined set of behaviors.
+  This is why the paradigm is called ‚Äúobject-oriented‚Äù.
   
   provides a higher degree of code-reusability. 
   These objects provide  info about our data by allowing us to define how we interact with the objects, and how they interact with other objects.*/
@@ -26,7 +26,7 @@ makes it clearer who the subject is (you) and what behavior is being invoked (dr
   	//member functions
   	void print()
   	{
-  		cout<<"Date is:/n"<<Date<<'/'<<year<<'/';
+  		cout<<"Date is:\n"<<Date<<'/'<<year<<'/';
   		
 	  }
   }; //class ends with semicolon
