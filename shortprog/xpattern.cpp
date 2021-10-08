@@ -4,9 +4,7 @@ using namespace std;
 
 int main(){
 	int row,col,norows;
-	char name;
-	cout<<"enter the string";
-	cin>>name[];
+	char name[] = "Program";
 	norows = strlen(name);
 	for(row = 0;row<norows;row++)
 	{
