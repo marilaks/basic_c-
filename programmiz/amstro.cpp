@@ -4,21 +4,33 @@
 using namespace std;
 
 int main(){
-	int remain,n,result;
+	int check,remain,n,result,arms,val;
 	
 	cout<<"enter the value"<<endl;
 	cin>>n;
+	cout<<"enter the power value";
+	cin>>val;
+	
+	//assigning n value to check to retain it 
+	check = n;
 	
 	//until n bcomz zero
 	while(n !=0){
 	
 	remain = n % 10;
-	remain = pow(remain,3);
-	result += remain;
+	arms = pow(remain,val);
+	result = result + arms;
 	n /= 10;
 	}
-	cout<<"reverse num"<<remain;
 	
-	//amstrong number
+	if(result == check){
+	
+	cout<<"armstrong number = "<<result;
+}
+else{
+	cout<<"not an amstrong number"<<endl;
+}
+	
+	
 	
 }
