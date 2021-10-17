@@ -3,9 +3,8 @@
 using namespace std;
 
 int main(){
-	
-	int n[6],key,True,False;
-	bool keys = False;
+	int n[6],key;
+	bool keys = false;
 	cout<<"enter the elements"<<endl;
 	//getting array from user
 	for(int i=0;i<6;i++){
@@ -21,16 +20,14 @@ int main(){
 		
 		if(key == n[6]){
 			
+			keys = true;
 			cout<<"element found at = "<<j<<endl;
-			keys = True;
+			
 			break;
 		}
-	}
-	
-	if(keys= False ){
-		
+			if(keys = false ){
 		cout<<"element not found"<<endl;
 	}
-	
-
+	}
 }
+
