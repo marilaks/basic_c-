@@ -10,7 +10,22 @@ M        M*/
 using namespace std;
 
 int main(){
-	int rows,space,i,j;
+	int rows = 5,space,i,j;
 	
-	//getting 
+	//getting input from user
+ char name[] = "names";
+	
+	//rows
+	for(i = 0;i<rows;i++){
+		for(j=0;j<rows;j++){
+			if((i == j) || ((i+j) == (rows - 1)){
+			
+			cout<<name[j];
+		}
+		else{
+			cout<<" ";
+		}
+		}
+		cout<<"\n";
+	}
 }
