@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int n,space;
+	int row,space;
 	cout<<"enter no of rows";
-	cin>>n;
-	for(int i=1;i<=n;i++)
+	cin>>row;
+	for(int i=1;i<=row;i++)
 	{
-		for(int space = 1;space <= (n-i);space++)
+		for(space = 1;space <= (row-i);space++)
 		{
 			cout<<" ";
 		}
